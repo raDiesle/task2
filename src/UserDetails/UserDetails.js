@@ -61,7 +61,6 @@ export default function UserDetails({userId, isLoggedInCrudadmin}) {
             return;
         }
         const lastname = getUserDetailsObject()[userId].lastname;
-        console.log(lastname);
         setLastname(lastname);
     }, [userId]);
     const handleLastnameChange = (event) => {

@@ -16,7 +16,7 @@ export default function Users({isLoggedInCrudadmin}) {
     const [lastNameAscSort, setLastNameAscSort] = useState(false);
     const lastNameAscSortString = 'lastNameAscSort';
     useEffect(() => {
-        const lastNameAscSortFromStorage = localStorage.getItem(lastNameAscSortString).toLowerCase() === 'true';
+        const lastNameAscSortFromStorage = localStorage.getItem(lastNameAscSortString) === 'true';
         setLastNameAscSort(lastNameAscSortFromStorage);
     }, []);
     const handleSort = () => {
@@ -73,7 +73,7 @@ export default function Users({isLoggedInCrudadmin}) {
                 <tbody>
                 <tr>
                     <td className="th actionPointer" onClick={handleSort}>
-                        Name <i className={!lastNameAscSort ? 'sort-by-asc' : 'sort-by-desc'}></i>
+                        Name <i className={!lastNameAscSort ? 'sortByAsc' : 'sortByDesc'}></i>
                     </td>
                     <td className="th">Country</td>
                 </tr>
