@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raDiesle/task2/precache-manifest.24c3317e315793218e38d9c8ea494f2e.js"
+  "/raDiesle/task2/precache-manifest.829e659d01777b43cfc4e0795bb3ad16.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/raDiesle/task2/static/css/main.805b6c8e.chunk.css",
-    "main.js": "/raDiesle/task2/static/js/main.c2fe3308.chunk.js",
-    "main.js.map": "/raDiesle/task2/static/js/main.c2fe3308.chunk.js.map",
+    "main.js": "/raDiesle/task2/static/js/main.56a0ef43.chunk.js",
+    "main.js.map": "/raDiesle/task2/static/js/main.56a0ef43.chunk.js.map",
     "runtime~main.js": "/raDiesle/task2/static/js/runtime~main.48541fb6.js",
     "runtime~main.js.map": "/raDiesle/task2/static/js/runtime~main.48541fb6.js.map",
-    "static/js/2.21469991.chunk.js": "/raDiesle/task2/static/js/2.21469991.chunk.js",
-    "static/js/2.21469991.chunk.js.map": "/raDiesle/task2/static/js/2.21469991.chunk.js.map",
+    "static/js/2.e0f535b8.chunk.js": "/raDiesle/task2/static/js/2.e0f535b8.chunk.js",
+    "static/js/2.e0f535b8.chunk.js.map": "/raDiesle/task2/static/js/2.e0f535b8.chunk.js.map",
     "index.html": "/raDiesle/task2/index.html",
-    "precache-manifest.24c3317e315793218e38d9c8ea494f2e.js": "/raDiesle/task2/precache-manifest.24c3317e315793218e38d9c8ea494f2e.js",
+    "precache-manifest.829e659d01777b43cfc4e0795bb3ad16.js": "/raDiesle/task2/precache-manifest.829e659d01777b43cfc4e0795bb3ad16.js",
     "service-worker.js": "/raDiesle/task2/service-worker.js",
     "static/css/main.805b6c8e.chunk.css.map": "/raDiesle/task2/static/css/main.805b6c8e.chunk.css.map"
   }
