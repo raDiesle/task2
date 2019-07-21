@@ -2,6 +2,7 @@
   "name": "task2",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://task2-b4c26.web.app/#/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
