@@ -1,8 +1,13 @@
 import React from 'react';
 
-export default function Country({code}) {
-    const configList = {
-        de : "Germany"
-    };
-    return <span>{configList[code]}</span>;
-}
+const countryConfigList = {
+    de : "Germany",
+    en: "America"
+};
+const Country = ({code}) => {
+    return <span>{countryConfigList[code]}</span>;
+};
+export default Country;
+
+
+export {countryConfigList};

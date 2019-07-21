@@ -1,9 +1,13 @@
 // as table tags are not recommended nowadays
-.table{
- padding-top: 15px;
-}
-.tr{
 
+.noResults{
+  text-align: center;
+  width: 300px;
+  padding-top: 50px;
+}
+
+.table{
+ padding-top: 150px;
 }
 
 .th {
@@ -16,4 +20,31 @@
 
 .td {
   padding: 10px;
+}
+
+// copied fromhttp://jsfiddle.net/shengoo/Ev83S/
+.sortByAsc
+{
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 0 3px;
+  background: transparent;
+  border-bottom: solid 7px #F80;
+  border-top-width: 0;
+}
+
+.sortByDesc
+{
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 0 3px;
+  background: transparent;
+  border-top: solid 7px #F80;
+  border-bottom-width: 0;
 }

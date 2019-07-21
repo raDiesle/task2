@@ -1,37 +1,45 @@
 import React,  { useState }  from 'react';
 import './Login.scss';
-import Users from "../Users/Users";
 import {Redirect} from "react-router-dom";
 
-export default function Login({setIsLoggedInCrudadmin, isLoggedInCrudadmin}) {
+const Login = ({setIsLoggedInCrudadmin}) => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [validationError, setValidationError] = useState('');
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
         const isCrudadmin = username === 'crudadmin' && password === 'password';
-        const isReadonlyAdmin = username === 'readonlyadmin' && 'password';
+        const isReadonlyAdmin = username === 'readonlyadmin' && password === 'password';
 
-        const isLoggedIn = isCrudadmin || isReadonlyAdmin;
+        setIsLoggedIn(isCrudadmin || isReadonlyAdmin);
         if(!isLoggedIn){
             setValidationError('username does not exist or password is wrong');
         }
-        setIsLoggedInCrudadmin(isLoggedIn);
+        setIsLoggedInCrudadmin(isCrudadmin);
     };
 
-    if(isLoggedInCrudadmin){
-        return <Redirect to={Users} />
+    if(isLoggedIn){
+        return <Redirect to="/users" />;
     }else{
         return (
             <form className="loginForm" onSubmit={onFormSubmit}>
-                <input type="text" placeholder="username" onChange={(e)=> setUsername(e.target.value)}/>
-                <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)}/>
-                <input type="submit" value="login" />
+                <div>
+                    <input type="text" placeholder="username" onChange={(e)=> setUsername(e.target.value)}/>
+                </div>
+                <div>
+                    <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)}/>
+                </div>
+                <div className="submitBtn">
+                    <input type="submit" value="login" />
+                </div>
 
-                { validationError && <div className="validationError">validationError</div> }
+                { validationError && <div className="inputError">{validationError}</div> }
             </form>
         )
     };
-}
+};
+
+export default Login;

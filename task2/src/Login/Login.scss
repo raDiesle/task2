@@ -2,6 +2,11 @@
 
 }
 
-.validationError {
+.inputError {
   color: red;
+  border-color: red;
+}
+
+.submitBtn{
+  padding-top: 20px;
 }
