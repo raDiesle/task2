@@ -1,0 +1,19 @@
+.header {
+  background-color: #282c34;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.content {
+  text-align: center;
+  color: #a2a2a2;
+  padding: 20px;
+}
+
+.view {
+  /* better not use inline-block */
+  display: inline-block;
+  max-width: 800px;
+}
